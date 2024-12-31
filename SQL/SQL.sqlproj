@@ -79,6 +79,7 @@
     <Build Include="Procedures\load_pbi_currencies.sql" />
     <PostDeploy Include="Generation\createJobFinancialData.sql" />
     <Build Include="Generation\checkReferenceId.sql" />
+    <Build Include="Procedures\transform_transactions_file.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Procedures\transform_src_historical_transactions.sql" />
