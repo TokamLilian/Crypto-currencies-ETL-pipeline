@@ -92,13 +92,19 @@ EXEC sp_add_job
 GO
 
 DECLARE @JobCommand NVARCHAR(300);
-DECLARE @EnvironmentReferenceID INT;
+DECLARE @ReferenceID INT;
 DECLARE @ServerName NVARCHAR(128);
-SET @EnvironmentReferenceID = 1;
+
+EXEC GetEnvironmentReferenceId
+    @ProjectName = N'FD-SSIS',
+    @FolderName = N'FinancialData',
+    @EnvironmentName = N'DEV',
+    @EnvironmentReferenceId = @ReferenceId OUTPUT;
+
 SET @ServerName = N'(local)'; -- Replace "(local)" with your actual SQL Server instance name if needed
 
 -- Add the first SSIS package step
-SET @JobCommand = N'/IS "\SSISDB\FinancialData\FD-SSIS\1_Extract_data.dtsx" /SERVER ' + @ServerName + N' /ENVREFERENCE ' + CAST(@EnvironmentReferenceID AS NVARCHAR(10));
+SET @JobCommand = N'/IS "\SSISDB\FinancialData\FD-SSIS\1_Extract_data.dtsx" /SERVER ' + @ServerName + N' /ENVREFERENCE ' + CAST(@tReferenceID AS NVARCHAR(10));
 EXEC sp_add_jobstep
     @job_name = N'Financial_data_etl',
     @step_name = N'1_extract_data_from_cb',
@@ -111,7 +117,7 @@ EXEC sp_add_jobstep
     @on_fail_action = 2;      -- Quit on failure
 
 -- Add the second SSIS package step
-SET @JobCommand = N'/IS "\SSISDB\FinancialData\FD-SSIS\2_Transform_data.dtsx" /SERVER ' + @ServerName + N' /ENVREFERENCE ' + CAST(@EnvironmentReferenceID AS NVARCHAR(10));
+SET @JobCommand = N'/IS "\SSISDB\FinancialData\FD-SSIS\2_Transform_data.dtsx" /SERVER ' + @ServerName + N' /ENVREFERENCE ' + CAST(@ReferenceID AS NVARCHAR(10));
 EXEC sp_add_jobstep
     @job_name = N'Financial_data_etl',
     @step_name = N'2_transform_source_table',
@@ -124,7 +130,7 @@ EXEC sp_add_jobstep
     @on_fail_action = 2;    -- Quit on failure
 
 -- Add the third SSIS package step
-SET @JobCommand = N'/IS "\SSISDB\FinancialData\FD-SSIS\3_Load_data.dtsx" /SERVER ' + @ServerName + N' /ENVREFERENCE ' + CAST(@EnvironmentReferenceID AS NVARCHAR(10));
+SET @JobCommand = N'/IS "\SSISDB\FinancialData\FD-SSIS\3_Load_data.dtsx" /SERVER ' + @ServerName + N' /ENVREFERENCE ' + CAST(@ReferenceID AS NVARCHAR(10));
 EXEC sp_add_jobstep
     @job_name = N'Financial_data_etl',
     @step_name = N'3_load_into_final_table',
