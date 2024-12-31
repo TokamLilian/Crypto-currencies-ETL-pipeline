@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">HEMLE-XPS</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZp9/VWXRfE6dWZQeoggIlwAAAAACAAAAAAAQZgAAAAEAACAAAACKP38n+HnAW1NGnnyL8O/o/R67AjLckw74NYksDcxTfwAAAAAOgAAAAAIAACAAAACNvmCWqAt0YIrudRRuYuoMWtA2LHgR79CIYesZsF+ne5AAAADZ5eWxbE2NJPC/e3bNSjf7+U0qSsYbAXrRt4sSnTFSZgF9qkwFIIeglLprWngq9zr2TINOZjPwuzk2c/F9KxQZBbpNnxqaPkADoWvD7JnujOei/1hNO+bbeLvxD8GkL2sccgNbV2py2qba3RQVIqLxwcsc7/D2fWU6mlSSq8b7zELuIZNDBO4W6w7OtO3F2v5AAAAA//f47/CqFg2x/tveWQdJJgCWkzq3D/n5KhftfZzjSyq7vrGKjys+z6i+NZkTixZ2uK2Z8Ud53j3/J37mCudFnw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZp9/VWXRfE6dWZQeoggIlwAAAAACAAAAAAAQZgAAAAEAACAAAADD0+rwn4cGH8jA4rtzuVriNjx8NPQ0B/yURHNO4cxLuwAAAAAOgAAAAAIAACAAAAAjI1kjeLokwZKpq/vaRnNhOH3FVsAV6lbhpX51BGt7WZAAAAAN2Nlbi1cukWB/bhkBsgNugyMLfGk0k6B7GZ74r6tTB7ZsCuXNd4i1179DL151sGpaHQZdx7WSCPSG5myCIVF5aKeyNNDOqUzk/RRnet8rf1hWrs4VsIDaw/EC0jhQ7FRJDCcYEm5FuKv5L8JUdy1vCqRfDzMGLHG/3e6XIdQqAMSfv8zNPB0+QBCtXNor74ZAAAAAWtC8W98jkNEMrj28/kLWYDqJjz3QmKne1maej5r2SWfv0iAprFAwZJzHVrstFNH+m4cU0P/par8/C3ZjDKGvrQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -44,16 +44,72 @@
                 <SSIS:Property SSIS:Name="Name">1_Extract_data</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">109</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">121</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F9BBE466-2AA8-4FA9-92AC-CFCAF78C133D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{123D66AF-4FF9-4B88-AA99-E3712C087A9E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="extractNewName">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{146DBB2F-A9B3-4106-9332-2461FAF09889}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\data.json.archive</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="extractOldName">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{80F5086D-5D45-4B91-BF1A-454014DE85D9}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\data.json</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="Extractor_products">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{C1F3CA7B-933A-474B-A249-A90549793460}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Extractor_products.py</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="Extractor_trades">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{F340D63E-4D63-4E29-9B50-8A56D31B3A69}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Extractor.py</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.localhost.Financial_Data.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -212,20 +268,19 @@
                 <SSIS:Property SSIS:Name="Name">3_Load_data</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">67</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">78</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{234951CE-F7A7-43DD-A518-9B2B46057E74}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{656C4958-F6D3-4E30-8469-6ED43F9E67FB}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.load_pbi_currencies.sql.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="loadNewName">
                   <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="ID">{F1A1BCFB-B812-44AC-ACB8-AE419D631E80}</SSIS:Property>
                     <SSIS:Property SSIS:Name="CreationName">
                     </SSIS:Property>
                     <SSIS:Property SSIS:Name="Description">
@@ -233,14 +288,13 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\products.json.archive</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.load_pbi_currencies.sql.ConnectionString">
+                <SSIS:Parameter SSIS:Name="loadOldName">
                   <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="ID">{25E59EAA-137D-4717-9509-9BF5CBC748F1}</SSIS:Property>
                     <SSIS:Property SSIS:Name="CreationName">
                     </SSIS:Property>
                     <SSIS:Property SSIS:Name="Description">
@@ -248,7 +302,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\repos\Financial-data\SQL\Procedures\load_pbi_currencies.sql</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\products.json</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -408,10 +462,10 @@
                 <SSIS:Property SSIS:Name="Name">2_Transform_data</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">10</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">12</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{6C36D37E-FF02-4DF1-BF88-95262F110E85}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{3F837FA0-D487-4A11-9998-8054CD8C73B3}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -563,36 +617,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.transform_src_historical_transactions.sql.ConnectByProxy">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.transform_src_historical_transactions.sql.ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\repos\Financial-data\SQL\Procedures\transform_src_historical_transactions.sql</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
