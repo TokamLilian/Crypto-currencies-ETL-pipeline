@@ -76,14 +76,14 @@
     <Build Include="Creations\3_PowerBI Tables\pbiHistorical_transactions.sql" />
     <Build Include="Creations\4_API Views\apiCurrencies.sql" />
     <Build Include="Creations\4_API Views\apiHistorical_transactions.sql" />
-    <None Include="Procedures\load_pbi_currencies.sql" />
+    <Build Include="Procedures\load_pbi_currencies.sql" />
     <PostDeploy Include="Generation\createJobFinancialData.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Procedures\transform_src_historical_transactions.sql" />
+    <Build Include="Procedures\transform_src_historical_transactions.sql" />
     <None Include="SQL.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PreDeploy Include="Generation\createEnvironmentF_D.sql" />
+    <None Include="Generation\createEnvironmentF_D.sql" />
   </ItemGroup>
 </Project>
