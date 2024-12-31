@@ -7,12 +7,12 @@
   DTS:CreatorName="HEMLE-XPS\tokam"
   DTS:DTSID="{EE01804B-4FBE-42A5-9CF0-36276E316EB5}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="1_Extract_data"
   DTS:PackageType="5"
-  DTS:VersionBuild="109"
-  DTS:VersionGUID="{F9BBE466-2AA8-4FA9-92AC-CFCAF78C133D}">
+  DTS:VersionBuild="122"
+  DTS:VersionGUID="{7B0A75DB-0C26-46D3-988E-924C8A1EAA80}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,62 +29,45 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables>
-    <DTS:Variable
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
       DTS:CreationName=""
-      DTS:DTSID="{75E9133A-2C78-474C-827A-CFB458A75ED3}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
+      DTS:DataType="8"
+      DTS:DTSID="{146DBB2F-A9B3-4106-9332-2461FAF09889}"
       DTS:ObjectName="extractNewName">
-      <DTS:VariableValue
-        DTS:DataType="8">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\data.json.archive</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\data.json.archive</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
       DTS:CreationName=""
-      DTS:DTSID="{FF5838F7-89D8-48E4-B314-156D059D4D1E}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
+      DTS:DataType="8"
+      DTS:DTSID="{80F5086D-5D45-4B91-BF1A-454014DE85D9}"
       DTS:ObjectName="extractOldName">
-      <DTS:VariableValue
-        DTS:DataType="8">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\data.json</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\data.json</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
       DTS:CreationName=""
-      DTS:DTSID="{030F2276-EB30-49CC-875B-482C9A443BBC}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
+      DTS:DataType="8"
+      DTS:DTSID="{C1F3CA7B-933A-474B-A249-A90549793460}"
       DTS:ObjectName="Extractor_products">
-      <DTS:VariableValue
-        DTS:DataType="8">Extractor_products.py</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">Extractor_products.py</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
       DTS:CreationName=""
-      DTS:DTSID="{E6CE7744-BC69-4327-966F-8B46CDDDD11A}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
+      DTS:DataType="8"
+      DTS:DTSID="{F340D63E-4D63-4E29-9B50-8A56D31B3A69}"
       DTS:ObjectName="Extractor_trades">
-      <DTS:VariableValue
-        DTS:DataType="8">Extractor.py</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{581E67EE-B441-42A4-879B-9A27517615C0}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="PythonPath">
-      <DTS:VariableValue
-        DTS:DataType="8">C:\Users\tokam\AppData\Local\Microsoft\WindowsApps\python.exe</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{90239BB7-F15F-40F3-9D81-330C33DAFAE4}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="WorkingDir">
-      <DTS:VariableValue
-        DTS:DataType="8">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\repos\Financial-data\PY</DTS:VariableValue>
-    </DTS:Variable>
-  </DTS:Variables>
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">Extractor.py</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Extract historical transactions"
@@ -111,9 +94,9 @@
             <FileSystemData
               TaskOperationType="RenameFile"
               TaskOverwriteDestFile="True"
-              TaskSourcePath="User::extractOldName"
+              TaskSourcePath="$Package::extractOldName"
               TaskIsSourceVariable="True"
-              TaskDestinationPath="User::extractNewName"
+              TaskDestinationPath="$Package::extractNewName"
               TaskIsDestinationVariable="True" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -129,16 +112,16 @@
           DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:PropertyExpression
-            DTS:Name="Arguments">@[User::Extractor_trades]</DTS:PropertyExpression>
+            DTS:Name="Arguments">@[$Package::Extractor_trades]</DTS:PropertyExpression>
           <DTS:PropertyExpression
-            DTS:Name="Executable">@[User::PythonPath]</DTS:PropertyExpression>
+            DTS:Name="Executable">@[$Project::PythonPath]</DTS:PropertyExpression>
           <DTS:PropertyExpression
-            DTS:Name="WorkingDirectory">@[User::WorkingDir]</DTS:PropertyExpression>
+            DTS:Name="WorkingDirectory">@[$Project::WorkingDir]</DTS:PropertyExpression>
           <DTS:ObjectData>
             <ExecuteProcessData
               Executable="C:\Users\tokam\AppData\Local\Microsoft\WindowsApps\python.exe"
               Arguments="Extractor.py"
-              WorkingDirectory="C:\Users\tokam\Documents\Big Projects\Year 2024\Data\repos\Financial-data\PY" />
+              WorkingDirectory="C:\Users\tokam\Downloads\Documents\Crypto-currencies-ETL-pipeline\PY" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -190,16 +173,16 @@
       DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:PropertyExpression
-        DTS:Name="Arguments">@[User::Extractor_products]</DTS:PropertyExpression>
+        DTS:Name="Arguments">@[$Package::Extractor_products]</DTS:PropertyExpression>
       <DTS:PropertyExpression
-        DTS:Name="Executable">@[User::PythonPath]</DTS:PropertyExpression>
+        DTS:Name="Executable">@[$Project::PythonPath]</DTS:PropertyExpression>
       <DTS:PropertyExpression
-        DTS:Name="WorkingDirectory">@[User::WorkingDir]</DTS:PropertyExpression>
+        DTS:Name="WorkingDirectory">@[$Project::WorkingDir]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <ExecuteProcessData
           Executable="C:\Users\tokam\AppData\Local\Microsoft\WindowsApps\python.exe"
           Arguments="Extractor_products.py"
-          WorkingDirectory="C:\Users\tokam\Documents\Big Projects\Year 2024\Data\repos\Financial-data\PY" />
+          WorkingDirectory="C:\Users\tokam\Downloads\Documents\Crypto-currencies-ETL-pipeline\PY" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -216,15 +199,15 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="169.333333333334,42.6666666666667"
+          Size="169,43"
           Id="Package\Extract historical transactions\Rename trades file"
           TopLeft="140.083326683691,348.73683779309" />
         <NodeLayout
-          Size="240,42.6666666666667"
+          Size="240,43"
           Id="Package\Extract historical transactions\Run python extractor for all trades"
           TopLeft="104.916633753728,22.8070163418602" />
         <NodeLayout
-          Size="302.666666666667,42.6666666666667"
+          Size="303,43"
           Id="Package\Extract historical transactions\transform data from trades file into source table"
           TopLeft="74.4583296173569,171.526313423037" />
         <EdgeLayout
@@ -274,12 +257,12 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="496.666666666667,482.666666666667"
-          Size="496.666666666667,525.333333333334"
+          PanelSize="497,483"
+          Size="497,526"
           Id="Package\Extract historical transactions"
           TopLeft="60,60" />
         <NodeLayout
-          Size="237.333333333334,42.6666666666667"
+          Size="237,43"
           Id="Package\Run python extractor for products"
           TopLeft="682.60414047322,91.122813102666" />
       </GraphLayout>

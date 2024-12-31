@@ -7,12 +7,12 @@
   DTS:CreatorName="HEMLE-XPS\tokam"
   DTS:DTSID="{96124CB1-528D-4DE3-B40E-6AD71803FBEC}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="2_Transform_data"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{6C36D37E-FF02-4DF1-BF88-95262F110E85}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{3F837FA0-D487-4A11-9998-8054CD8C73B3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -26,16 +26,6 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=.;Initial Catalog=Financial_Data;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-2_Transform_data-{90B52884-6101-4B8C-9325-6AA7F780B1F1}LocalHost.Financial_Data;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[transform_src_historical_transactions.sql]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{7D117CB7-5DC2-43D5-9E1C-0D15073AC8C3}"
-      DTS:ObjectName="transform_src_historical_transactions.sql">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="C:\Users\tokam\Documents\Big Projects\Year 2024\Data\repos\Financial-data\SQL\Procedures\transform_src_historical_transactions.sql" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -55,8 +45,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{90B52884-6101-4B8C-9325-6AA7F780B1F1}"
-          SQLTask:SqlStmtSourceType="FileConnection"
-          SQLTask:SqlStatementSource="transform_src_historical_transactions.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="EXEC stg.transformSrcTransactions" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>

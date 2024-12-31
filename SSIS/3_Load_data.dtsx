@@ -11,21 +11,11 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="3_Load_data"
   DTS:PackageType="5"
-  DTS:VersionBuild="67"
-  DTS:VersionGUID="{234951CE-F7A7-43DD-A518-9B2B46057E74}">
+  DTS:VersionBuild="79"
+  DTS:VersionGUID="{6C2F4994-A5AF-4733-BB90-4032E4C2724C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[load_pbi_currencies.sql]"
-      DTS:CreationName="FILE"
-      DTS:DTSID="{14AC1B15-00DC-4C29-BF4D-CC94B21C5983}"
-      DTS:ObjectName="load_pbi_currencies.sql">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="C:\Users\tokam\Documents\Big Projects\Year 2024\Data\repos\Financial-data\SQL\Procedures\load_pbi_currencies.sql" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.Financial_Data]"
       DTS:CreationName="OLEDB"
@@ -39,26 +29,27 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables>
-    <DTS:Variable
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
       DTS:CreationName=""
-      DTS:DTSID="{0DA4FCF9-8EFD-4C56-80BF-E054CC180D0F}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
+      DTS:DataType="8"
+      DTS:DTSID="{F1A1BCFB-B812-44AC-ACB8-AE419D631E80}"
       DTS:ObjectName="loadNewName">
-      <DTS:VariableValue
-        DTS:DataType="8">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\products.json.archive</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\products.json.archive</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
       DTS:CreationName=""
-      DTS:DTSID="{02AC515A-87F1-4CED-8197-B38C94A84829}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
+      DTS:DataType="8"
+      DTS:DTSID="{25E59EAA-137D-4717-9509-9BF5CBC748F1}"
       DTS:ObjectName="loadOldName">
-      <DTS:VariableValue
-        DTS:DataType="8">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\products.json</DTS:VariableValue>
-    </DTS:Variable>
-  </DTS:Variables>
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\products.json</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\load data staging historical transactions in to power bi table"
@@ -101,8 +92,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{258F8837-C3C9-4F6B-BFB1-497C1C2581E4}"
-              SQLTask:SqlStmtSourceType="FileConnection"
-              SQLTask:SqlStatementSource="load_pbi_currencies.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="EXEC powerbi.loadCurrencies" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -120,9 +110,9 @@
             <FileSystemData
               TaskOperationType="RenameFile"
               TaskOverwriteDestFile="True"
-              TaskSourcePath="User::loadOldName"
+              TaskSourcePath="$Package::loadOldName"
               TaskIsSourceVariable="True"
-              TaskDestinationPath="User::loadNewName"
+              TaskDestinationPath="$Package::loadNewName"
               TaskIsDestinationVariable="True" />
           </DTS:ObjectData>
         </DTS:Executable>
