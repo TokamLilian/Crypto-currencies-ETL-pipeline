@@ -78,6 +78,7 @@
     <Build Include="Creations\4_API Views\apiHistorical_transactions.sql" />
     <Build Include="Procedures\load_pbi_currencies.sql" />
     <PostDeploy Include="Generation\createJobFinancialData.sql" />
+    <Build Include="Generation\checkReferenceId.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Procedures\transform_src_historical_transactions.sql" />
