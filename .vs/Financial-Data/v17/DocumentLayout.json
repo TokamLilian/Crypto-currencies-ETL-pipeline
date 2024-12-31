@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39965FB8-68D0-4737-8FAC-7B21635149FB}|SSIS\\SSIS.dtproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\1_Extract_data.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{39965FB8-68D0-4737-8FAC-7B21635149FB}|SSIS\\SSIS.dtproj|solutionrelative:SSIS\\1_Extract_data.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createJobFinancialData.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Generation\\createJobFinancialData.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\checkReferenceId.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Generation\\checkReferenceId.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createJobFinancialData.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Generation\\createJobFinancialData.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,39 +39,29 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "5a2d11be-c6af-48f5-b283-afe17fc86e92",
-        "Display": 1,
-        "X": 222,
-        "Y": 78,
-        "Width": 1403,
-        "Height": 783,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "1_Extract_data.dtsx [Design]",
-              "DocumentMoniker": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\1_Extract_data.dtsx",
-              "RelativeDocumentMoniker": "SSIS\\1_Extract_data.dtsx",
-              "ToolTip": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\1_Extract_data.dtsx [Design]",
-              "RelativeToolTip": "SSIS\\1_Extract_data.dtsx [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-31T04:56:29.78Z",
-              "EditorCaption": " [Design]"
+              "Title": "createJobFinancialData.sql ",
+              "DocumentMoniker": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createJobFinancialData.sql",
+              "RelativeDocumentMoniker": "SQL\\Generation\\createJobFinancialData.sql",
+              "ToolTip": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createJobFinancialData.sql",
+              "RelativeToolTip": "SQL\\Generation\\createJobFinancialData.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-31T18:14:07.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "checkReferenceId.sql",
+              "DocumentMoniker": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\checkReferenceId.sql",
+              "RelativeDocumentMoniker": "SQL\\Generation\\checkReferenceId.sql",
+              "ToolTip": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\checkReferenceId.sql\r\n(HEMLE-XPS\\tokam)",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-31T18:23:24.695Z",
+              "EditorCaption": ""
             }
           ]
         }
