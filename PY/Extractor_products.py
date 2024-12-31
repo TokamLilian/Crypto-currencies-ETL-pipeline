@@ -6,7 +6,6 @@ COINBASE_SYMBOLS = ["BTC-USD", "ETH-USD", "ETC-USD", "USDT-USD", "BTC-USDT", "ET
 
 
 products_dir = "C:\\Users\\tokam\\Documents\\Big Projects\\Year 2024\\Data\\src\\Exploit-my-data\\register\\products.json"
-out_dir = "C:\\Users\\tokam\\Documents\\Big Projects\\Year 2024\\Data\\src\\Exploit-my-data\\register\\out.txt"
 
 
 def public_products():
