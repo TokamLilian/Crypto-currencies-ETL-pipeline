@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python", "PY\Python.pyproj", "{4C7C2046-AEB2-4195-A851-9646EC39E2EC}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SQL", "SQL\SQL.sqlproj", "{5AD8827C-F848-497D-94FD-55CA156CE973}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "SSIS", "SSIS\SSIS.dtproj", "{39965FB8-68D0-4737-8FAC-7B21635149FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C7C2046-AEB2-4195-A851-9646EC39E2EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C7C2046-AEB2-4195-A851-9646EC39E2EC}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C7C2046-AEB2-4195-A851-9646EC39E2EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD8827C-F848-497D-94FD-55CA156CE973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD8827C-F848-497D-94FD-55CA156CE973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD8827C-F848-497D-94FD-55CA156CE973}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5AD8827C-F848-497D-94FD-55CA156CE973}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD8827C-F848-497D-94FD-55CA156CE973}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{5AD8827C-F848-497D-94FD-55CA156CE973}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{5AD8827C-F848-497D-94FD-55CA156CE973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD8827C-F848-497D-94FD-55CA156CE973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AD8827C-F848-497D-94FD-55CA156CE973}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{39965FB8-68D0-4737-8FAC-7B21635149FB}.Debug|Any CPU.ActiveCfg = Development
+		{39965FB8-68D0-4737-8FAC-7B21635149FB}.Debug|Any CPU.Build.0 = Development
+		{39965FB8-68D0-4737-8FAC-7B21635149FB}.Development|Any CPU.ActiveCfg = Development
+		{39965FB8-68D0-4737-8FAC-7B21635149FB}.Development|Any CPU.Build.0 = Development
+		{39965FB8-68D0-4737-8FAC-7B21635149FB}.Release|Any CPU.ActiveCfg = Development
+		{39965FB8-68D0-4737-8FAC-7B21635149FB}.Release|Any CPU.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90DA5191-2109-4080-ACE8-E9B352ED6BA7}
+	EndGlobalSection
+EndGlobal
