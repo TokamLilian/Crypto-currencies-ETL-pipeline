@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+SQL/bin/Debug/*
+SQL/obj/Debug/*
+SSIS/obj/Development/*
+SSIS/bin/Development/*
+
 # C extensions
 *.so
 
@@ -169,3 +174,4 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+PY/newExtractor.py
