@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="3_Load_data"
   DTS:PackageType="5"
-  DTS:VersionBuild="79"
-  DTS:VersionGUID="{6C2F4994-A5AF-4733-BB90-4032E4C2724C}">
+  DTS:VersionBuild="87"
+  DTS:VersionGUID="{B45793F4-1256-472A-BB80-2CB8AD8CDE77}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -92,7 +92,14 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{258F8837-C3C9-4F6B-BFB1-497C1C2581E4}"
-              SQLTask:SqlStatementSource="EXEC powerbi.loadCurrencies" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="EXEC powerbi.loadCurrencies ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="$Project::WorkingDir"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -146,7 +153,7 @@
           Id="Package\load data staging historical transactions in to power bi table"
           TopLeft="64.4345236112859,70.203013182146" />
         <NodeLayout
-          Size="343,43"
+          Size="307,42"
           Id="Package\Load Products\Load data from products file into power bi table"
           TopLeft="61.9583301761504,47.2280691737721" />
         <NodeLayout
@@ -155,30 +162,18 @@
           TopLeft="129.458327158665,195.929821927021" />
         <EdgeLayout
           Id="Package\Load Products.PrecedenceConstraints[Constraint]"
-          TopLeft="233.45833017615,90.2280691737721">
+          TopLeft="217.458328667408,89.2280691737721">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-14.0000030174854,105.701752753249"
+              EndConnector="0,106.701752753249"
               Start="0,0"
-              End="-14.0000030174854,98.2017527532489">
+              End="0,99.2017527532489">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.8508763766245" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,48.8508763766245"
-                    Point2="0,52.8508763766245"
-                    Point3="-4,52.8508763766245" />
-                  <mssgle:LineSegment
-                    End="-10.0000030174854,52.8508763766245" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-10.0000030174854,52.8508763766245"
-                    Point2="-14.0000030174854,52.8508763766245"
-                    Point3="-14.0000030174854,56.8508763766245" />
-                  <mssgle:LineSegment
-                    End="-14.0000030174854,98.2017527532489" />
+                    End="0,99.2017527532489" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
