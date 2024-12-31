@@ -1,87 +1,51 @@
-﻿<?xml version="1.0"?>
-<SSIS:Parameters xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
-  <SSIS:Parameter
-    SSIS:Name="P_Financial_Data">
-    <SSIS:Properties>
-      <SSIS:Property
-        SSIS:Name="ID">{d2e6e058-1ab3-456f-a411-4d4cd4f3e04a}</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="CreationName"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Description"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Required">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Sensitive">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Value">Data Source=.;Integrated Security=True;Persist Security Info=False;Pooling=False;Multiple Active Result Sets=False;Connect Timeout=60;Encrypt=False;Trust Server Certificate=False;Command Timeout=0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="DataType">18</SSIS:Property>
-    </SSIS:Properties>
-  </SSIS:Parameter>
-  <SSIS:Parameter
-    SSIS:Name="ServerName">
-    <SSIS:Properties>
-      <SSIS:Property
-        SSIS:Name="ID">{f9f5d375-8f5f-451e-a169-0645080c0243}</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="CreationName"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Description"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Required">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Sensitive">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Value">.</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="DataType">18</SSIS:Property>
-    </SSIS:Properties>
-  </SSIS:Parameter>
-  <SSIS:Parameter
-    SSIS:Name="PythonPath">
-    <SSIS:Properties>
-      <SSIS:Property
-        SSIS:Name="ID">{cd11fe14-336b-4993-b27c-9f432ef8d8c2}</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="CreationName"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Description"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Required">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Sensitive">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Value">C:\Users\tokam\AppData\Local\Microsoft\WindowsApps\python.exe</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="DataType">18</SSIS:Property>
-    </SSIS:Properties>
-  </SSIS:Parameter>
-  <SSIS:Parameter
-    SSIS:Name="WorkingDir">
-    <SSIS:Properties>
-      <SSIS:Property
-        SSIS:Name="ID">{243a819d-a545-4407-87cd-b645bb2f1edc}</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="CreationName"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Description"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Required">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Sensitive">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Value">C:\Users\tokam\Downloads\Documents\Crypto-currencies-ETL-pipeline\PY</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="DataType">18</SSIS:Property>
-    </SSIS:Properties>
-  </SSIS:Parameter>
-</SSIS:Parameters>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:Parameters xmlns:ns0="www.microsoft.com/SqlServer/SSIS">
+  <ns0:Parameter ns0:Name="P_Financial_Data">
+    <ns0:Properties>
+      <ns0:Property ns0:Name="ID">{d2e6e058-1ab3-456f-a411-4d4cd4f3e04a}</ns0:Property>
+      <ns0:Property ns0:Name="CreationName" />
+      <ns0:Property ns0:Name="Description" />
+      <ns0:Property ns0:Name="IncludeInDebugDump">0</ns0:Property>
+      <ns0:Property ns0:Name="Required">0</ns0:Property>
+      <ns0:Property ns0:Name="Sensitive">0</ns0:Property>
+      <ns0:Property ns0:Name="Value">Data Source=.;Integrated Security=True;Persist Security Info=False;Pooling=False;Multiple Active Result Sets=False;Connect Timeout=60;Encrypt=False;Trust Server Certificate=False;Command Timeout=0</ns0:Property>
+      <ns0:Property ns0:Name="DataType">18</ns0:Property>
+    </ns0:Properties>
+  </ns0:Parameter>
+  <ns0:Parameter ns0:Name="ServerName">
+    <ns0:Properties>
+      <ns0:Property ns0:Name="ID">{f9f5d375-8f5f-451e-a169-0645080c0243}</ns0:Property>
+      <ns0:Property ns0:Name="CreationName" />
+      <ns0:Property ns0:Name="Description" />
+      <ns0:Property ns0:Name="IncludeInDebugDump">0</ns0:Property>
+      <ns0:Property ns0:Name="Required">0</ns0:Property>
+      <ns0:Property ns0:Name="Sensitive">0</ns0:Property>
+      <ns0:Property ns0:Name="Value">.</ns0:Property>
+      <ns0:Property ns0:Name="DataType">18</ns0:Property>
+    </ns0:Properties>
+  </ns0:Parameter>
+  <ns0:Parameter ns0:Name="PythonPath">
+    <ns0:Properties>
+      <ns0:Property ns0:Name="ID">{cd11fe14-336b-4993-b27c-9f432ef8d8c2}</ns0:Property>
+      <ns0:Property ns0:Name="CreationName" />
+      <ns0:Property ns0:Name="Description" />
+      <ns0:Property ns0:Name="IncludeInDebugDump">0</ns0:Property>
+      <ns0:Property ns0:Name="Required">0</ns0:Property>
+      <ns0:Property ns0:Name="Sensitive">0</ns0:Property>
+      <ns0:Property ns0:Name="Value">C:\Users\tokam\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe</ns0:Property>
+      <ns0:Property ns0:Name="DataType">18</ns0:Property>
+    </ns0:Properties>
+  </ns0:Parameter>
+  <ns0:Parameter ns0:Name="WorkingDir">
+    <ns0:Properties>
+      <ns0:Property ns0:Name="ID">{243a819d-a545-4407-87cd-b645bb2f1edc}</ns0:Property>
+      <ns0:Property ns0:Name="CreationName" />
+      <ns0:Property ns0:Name="Description" />
+      <ns0:Property ns0:Name="IncludeInDebugDump">0</ns0:Property>
+      <ns0:Property ns0:Name="Required">0</ns0:Property>
+      <ns0:Property ns0:Name="Sensitive">0</ns0:Property>
+      <ns0:Property ns0:Name="Value">c:\Users\tokam\Downloads\Documents\Crypto-currencies-ETL-pipeline\PY</ns0:Property>
+      <ns0:Property ns0:Name="DataType">18</ns0:Property>
+    </ns0:Properties>
+  </ns0:Parameter>
+</ns0:Parameters>

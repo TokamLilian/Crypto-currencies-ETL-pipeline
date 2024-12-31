@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="1_Extract_data"
   DTS:PackageType="5"
-  DTS:VersionBuild="122"
-  DTS:VersionGUID="{7B0A75DB-0C26-46D3-988E-924C8A1EAA80}">
+  DTS:VersionBuild="126"
+  DTS:VersionGUID="{7558EC04-B905-4235-9516-84E5F3403F0C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,7 +37,7 @@
       DTS:ObjectName="extractNewName">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\data.json.archive</DTS:Property>
+        DTS:Name="ParameterValue">c:\Users\tokam\Downloads\Documents\Crypto-currencies-ETL-pipeline\PY\register\data.json.archive</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -46,7 +46,7 @@
       DTS:ObjectName="extractOldName">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\data.json</DTS:Property>
+        DTS:Name="ParameterValue">c:\Users\tokam\Downloads\Documents\Crypto-currencies-ETL-pipeline\PY\register\data.json</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -119,9 +119,9 @@
             DTS:Name="WorkingDirectory">@[$Project::WorkingDir]</DTS:PropertyExpression>
           <DTS:ObjectData>
             <ExecuteProcessData
-              Executable="C:\Users\tokam\AppData\Local\Microsoft\WindowsApps\python.exe"
+              Executable="C:\Users\tokam\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe"
               Arguments="Extractor.py"
-              WorkingDirectory="C:\Users\tokam\Downloads\Documents\Crypto-currencies-ETL-pipeline\PY" />
+              WorkingDirectory="c:\Users\tokam\Downloads\Documents\Crypto-currencies-ETL-pipeline\PY" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -138,7 +138,14 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{2ED23B9F-4F16-423C-A1CC-B838A572178C}"
-              SQLTask:SqlStatementSource="INSERT INTO src.src_Historical_transactions ([transaction], load_date)&#xA;SELECT BulkColumn, SYSDATETIME()&#xA;FROM OPENROWSET(BULK 'C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\data.json', SINGLE_BLOB) AS JSON;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="EXEC src.transform_transactions_file ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="$Project::WorkingDir"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -180,9 +187,9 @@
         DTS:Name="WorkingDirectory">@[$Project::WorkingDir]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <ExecuteProcessData
-          Executable="C:\Users\tokam\AppData\Local\Microsoft\WindowsApps\python.exe"
+          Executable="C:\Users\tokam\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe"
           Arguments="Extractor_products.py"
-          WorkingDirectory="C:\Users\tokam\Downloads\Documents\Crypto-currencies-ETL-pipeline\PY" />
+          WorkingDirectory="c:\Users\tokam\Downloads\Documents\Crypto-currencies-ETL-pipeline\PY" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -199,31 +206,31 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="169,43"
+          Size="171,42"
           Id="Package\Extract historical transactions\Rename trades file"
-          TopLeft="140.083326683691,348.73683779309" />
+          TopLeft="74.5,209.5" />
         <NodeLayout
-          Size="240,43"
+          Size="244,42"
           Id="Package\Extract historical transactions\Run python extractor for all trades"
-          TopLeft="104.916633753728,22.8070163418602" />
+          TopLeft="38,5.5" />
         <NodeLayout
-          Size="303,43"
+          Size="309,42"
           Id="Package\Extract historical transactions\transform data from trades file into source table"
-          TopLeft="74.4583296173569,171.526313423037" />
+          TopLeft="5.5,107.5" />
         <EdgeLayout
           Id="Package\Extract historical transactions.PrecedenceConstraints[Constraint]"
-          TopLeft="225.270828150524,214.192980089704">
+          TopLeft="160,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,134.543857703386"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,127.043857703386">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,127.043857703386" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -234,18 +241,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Extract historical transactions.PrecedenceConstraints[Constraint 1]"
-          TopLeft="225.354148352209,65.4736830085269">
+          TopLeft="160,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,106.05263041451"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,98.5526304145101">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,98.5526304145101" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -257,14 +264,14 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="497,483"
-          Size="497,526"
+          PanelSize="320,306"
+          Size="320,350"
           Id="Package\Extract historical transactions"
-          TopLeft="60,60" />
+          TopLeft="5.50000000000006,5.49999999999989" />
         <NodeLayout
-          Size="237,43"
+          Size="242,42"
           Id="Package\Run python extractor for products"
-          TopLeft="682.60414047322,91.122813102666" />
+          TopLeft="386.5,159.5" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

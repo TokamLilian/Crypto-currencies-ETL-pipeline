@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="3_Load_data"
   DTS:PackageType="5"
-  DTS:VersionBuild="87"
-  DTS:VersionGUID="{B45793F4-1256-472A-BB80-2CB8AD8CDE77}">
+  DTS:VersionBuild="89"
+  DTS:VersionGUID="{4441A313-D251-4900-BCB4-46408A2033D4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,7 +37,7 @@
       DTS:ObjectName="loadNewName">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\products.json.archive</DTS:Property>
+        DTS:Name="ParameterValue">c:\Users\tokam\Downloads\Documents\Crypto-currencies-ETL-pipeline\PY\register\products.json.archive</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -46,7 +46,7 @@
       DTS:ObjectName="loadOldName">
       <DTS:Property
         DTS:DataType="8"
-        DTS:Name="ParameterValue">C:\Users\tokam\Documents\Big Projects\Year 2024\Data\src\Exploit-my-data\register\products.json</DTS:Property>
+        DTS:Name="ParameterValue">c:\Users\tokam\Downloads\Documents\Crypto-currencies-ETL-pipeline\PY\register\products.json</DTS:Property>
     </DTS:PackageParameter>
   </DTS:PackageParameters>
   <DTS:Variables />
@@ -149,31 +149,31 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="359,43"
+          Size="366,42"
           Id="Package\load data staging historical transactions in to power bi table"
-          TopLeft="64.4345236112859,70.203013182146" />
+          TopLeft="5.50000000000006,108.5" />
         <NodeLayout
           Size="307,42"
           Id="Package\Load Products\Load data from products file into power bi table"
-          TopLeft="61.9583301761504,47.2280691737721" />
+          TopLeft="5.5,5.5" />
         <NodeLayout
-          Size="180,43"
+          Size="183,42"
           Id="Package\Load Products\Rename products file"
-          TopLeft="129.458327158665,195.929821927021" />
+          TopLeft="67.5,107.5" />
         <EdgeLayout
           Id="Package\Load Products.PrecedenceConstraints[Constraint]"
-          TopLeft="217.458328667408,89.2280691737721">
+          TopLeft="159,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,106.701752753249"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,99.2017527532489">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,99.2017527532489" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -185,10 +185,10 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="497,449"
-          Size="497,492"
+          PanelSize="318,204"
+          Size="318,248"
           Id="Package\Load Products"
-          TopLeft="631.249971780926,43.7894732034107" />
+          TopLeft="432.5,5.49999999999989" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
