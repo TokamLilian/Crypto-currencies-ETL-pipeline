@@ -1,0 +1,80 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createJobFinancialData.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Generation\\createJobFinancialData.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createEnvironmentF_D.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Generation\\createEnvironmentF_D.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createEnvironmentF_D.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Generation\\createEnvironmentF_D.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createJobFinancialData.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Generation\\createJobFinancialData.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "createJobFinancialData.sql ",
+              "DocumentMoniker": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createJobFinancialData.sql",
+              "RelativeDocumentMoniker": "SQL\\Generation\\createJobFinancialData.sql",
+              "ToolTip": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createJobFinancialData.sql",
+              "RelativeToolTip": "SQL\\Generation\\createJobFinancialData.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-31T00:12:30.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "createEnvironmentF_D.sql ",
+              "DocumentMoniker": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createEnvironmentF_D.sql",
+              "RelativeDocumentMoniker": "SQL\\Generation\\createEnvironmentF_D.sql",
+              "ToolTip": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createEnvironmentF_D.sql",
+              "RelativeToolTip": "SQL\\Generation\\createEnvironmentF_D.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-31T00:06:58.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f4e46f1e-cf83-40aa-b568-a627394bc994}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{007a3a6b-b5b2-454d-a2bd-cf929f989be2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
