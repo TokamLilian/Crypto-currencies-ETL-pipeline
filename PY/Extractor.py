@@ -2,8 +2,8 @@ import ccxt
 import json
 
 
-COINBASE_PUBLIC_KEY = 'OFxXdj03OA9ZTYQL'
-COINBASE_PRIVATE_KEY = 'uDx9QbB6mAr2FxMayVl7cUE6KPyRuJIP'
+# COINBASE_PUBLIC_KEY = 'OFxXdj03OA9ZTYQL'
+# COINBASE_PRIVATE_KEY = 'uDx9QbB6mAr2FxMayVl7cUE6KPyRuJIP'
 #COINBASE_SYMBOLS = ["BTC-USD", "ETH-USD", "ETC-USD", "MANA-USD", "VET-USD", "NEAR-USD", "VARA-USD", "MKR-USD", "GRT-USD", "NMR-USD", "MATIC-USD", "BCH-USD", "ALGO-USD", "ATOM-USD", "CAD-USD", "AURORA-USD"]
 COINBASE_SYMBOLS = ["BTC-USD", "ETH-USD", "ETC-USD", "NEAR-USD", "MKR-USD", "NMR-USD", "BCH-USD", "ALGO-USD", "CAD-USD"]
 file_dir = "C:\\Users\\tokam\\Documents\\Big Projects\\Year 2024\\Data\\src\\Exploit-my-data\\register\\data.json"
@@ -38,7 +38,7 @@ def populate_coinbase(trades, symbol, comma):
 
 
 def all_trades():
-    client = ccxt.coinbase({'apiKey': COINBASE_PUBLIC_KEY, 'secret': COINBASE_PRIVATE_KEY})
+    client = ccxt.coinbase({'apiKey': '82ebf545-84bf-4da8-90fd-d5904fbbfa11'})#, 'secret': COINBASE_PRIVATE_KEY})
     with open(file_dir, "a") as audit_file: audit_file.write('{"transactions":[')
     comma = True
     for symbol in COINBASE_SYMBOLS:
