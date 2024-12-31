@@ -2,10 +2,10 @@ CREATE PROCEDURE powerbi.loadCurrencies
     @ProjectPath NVARCHAR(MAX)
 AS
 BEGIN
-    DECLARE @productData VARCHAR(MAX)
 
     DECLARE @SQL nvarchar(max) = 
-        N'SELECT @productData = BulkColumn FROM 
+        N'DECLARE @productData VARCHAR(MAX)
+        SELECT @productData = BulkColumn FROM 
 
         OPENROWSET(BULK '''+ @ProjectPath + '\\register\\products.json'', SINGLE_BLOB) JSON
         INSERT 
