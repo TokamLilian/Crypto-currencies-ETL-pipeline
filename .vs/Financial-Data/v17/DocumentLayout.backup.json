@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createJobFinancialData.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Generation\\createJobFinancialData.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{39965FB8-68D0-4737-8FAC-7B21635149FB}|SSIS\\SSIS.dtproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\1_Extract_data.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{39965FB8-68D0-4737-8FAC-7B21635149FB}|SSIS\\SSIS.dtproj|solutionrelative:SSIS\\1_Extract_data.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createEnvironmentF_D.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Generation\\createEnvironmentF_D.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{39965FB8-68D0-4737-8FAC-7B21635149FB}|SSIS\\SSIS.dtproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\2_Transform_data.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{39965FB8-68D0-4737-8FAC-7B21635149FB}|SSIS\\SSIS.dtproj|solutionrelative:SSIS\\2_Transform_data.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createEnvironmentF_D.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Generation\\createEnvironmentF_D.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createJobFinancialData.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Generation\\createJobFinancialData.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{39965FB8-68D0-4737-8FAC-7B21635149FB}|SSIS\\SSIS.dtproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\3_Load_data.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{39965FB8-68D0-4737-8FAC-7B21635149FB}|SSIS\\SSIS.dtproj|solutionrelative:SSIS\\3_Load_data.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,32 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "createJobFinancialData.sql ",
-              "DocumentMoniker": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createJobFinancialData.sql",
-              "RelativeDocumentMoniker": "SQL\\Generation\\createJobFinancialData.sql",
-              "ToolTip": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createJobFinancialData.sql",
-              "RelativeToolTip": "SQL\\Generation\\createJobFinancialData.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-31T00:12:30.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "createEnvironmentF_D.sql ",
-              "DocumentMoniker": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createEnvironmentF_D.sql",
-              "RelativeDocumentMoniker": "SQL\\Generation\\createEnvironmentF_D.sql",
-              "ToolTip": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Generation\\createEnvironmentF_D.sql",
-              "RelativeToolTip": "SQL\\Generation\\createEnvironmentF_D.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-31T00:06:58.412Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -69,8 +41,40 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{007a3a6b-b5b2-454d-a2bd-cf929f989be2}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "1_Extract_data.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\1_Extract_data.dtsx",
+              "RelativeDocumentMoniker": "SSIS\\1_Extract_data.dtsx",
+              "ToolTip": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\1_Extract_data.dtsx [Design]",
+              "RelativeToolTip": "SSIS\\1_Extract_data.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-12-31T04:56:29.78Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "2_Transform_data.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\2_Transform_data.dtsx",
+              "RelativeDocumentMoniker": "SSIS\\2_Transform_data.dtsx",
+              "ToolTip": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\2_Transform_data.dtsx [Design]",
+              "RelativeToolTip": "SSIS\\2_Transform_data.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-12-31T06:08:42.401Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "3_Load_data.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\3_Load_data.dtsx",
+              "RelativeDocumentMoniker": "SSIS\\3_Load_data.dtsx",
+              "ToolTip": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\3_Load_data.dtsx [Design]",
+              "RelativeToolTip": "SSIS\\3_Load_data.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-12-31T06:08:46.513Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
