@@ -1,12 +1,13 @@
+import os
 import ccxt
 import json
 
 
-# COINBASE_PUBLIC_KEY = 'OFxXdj03OA9ZTYQL'
-# COINBASE_PRIVATE_KEY = 'uDx9QbB6mAr2FxMayVl7cUE6KPyRuJIP'
 #COINBASE_SYMBOLS = ["BTC-USD", "ETH-USD", "ETC-USD", "MANA-USD", "VET-USD", "NEAR-USD", "VARA-USD", "MKR-USD", "GRT-USD", "NMR-USD", "MATIC-USD", "BCH-USD", "ALGO-USD", "ATOM-USD", "CAD-USD", "AURORA-USD"]
 COINBASE_SYMBOLS = ["BTC-USD", "ETH-USD", "ETC-USD", "NEAR-USD", "MKR-USD", "NMR-USD", "BCH-USD", "ALGO-USD", "CAD-USD"]
-file_dir = "C:\\Users\\tokam\\Documents\\Big Projects\\Year 2024\\Data\\src\\Exploit-my-data\\register\\data.json"
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_dir =  script_dir + "\\register\\data.json"
 
 
 def add_coinbase_transaction(transaction):
@@ -50,6 +51,10 @@ def all_trades():
         except:                                             # Case where there are no trades for a product
             if COINBASE_SYMBOLS.index(symbol) == 0: comma = False   #if it is the first symbol, second symbol should not write comma at the begining of populate_coinbase()
             continue
+
+    register_dir = os.path.join(script_dir, 'register')
+    if not os.path.exists(register_dir): os.makedirs(register_dir)
+
     with open(file_dir, "a") as audit_file: audit_file.write(']}')
 
 

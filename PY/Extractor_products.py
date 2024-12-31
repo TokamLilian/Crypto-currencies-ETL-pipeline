@@ -1,11 +1,12 @@
+import os
 import json
 import ccxt
-#COINBASE_PUBLIC_KEY = 'OFxXdj03OA9ZTYQL'
-#COINBASE_PRIVATE_KEY = 'uDx9QbB6mAr2FxMayVl7cUE6KPyRuJIP'
+
+
 COINBASE_SYMBOLS = ["BTC-USD", "ETH-USD", "ETC-USD", "USDT-USD", "BTC-USDT", "ETH-USDT", "SHIB-USD", "BTC-EUR", "ETH-EUR", "USDT-EUR", "BTC-GBP", "ETH-GBP", "NEAR-USD", "MKR-USD", "NMR-USD", "BCH-USD", "ALGO-USD", "USDC-EUR", "USDT-EUR"]
 
-
-products_dir = "C:\\Users\\tokam\\Documents\\Big Projects\\Year 2024\\Data\\src\\Exploit-my-data\\register\\products.json"
+script_dir = os.path.dirname(os.path.abspath(__file__))
+products_dir =  script_dir + "\\register\\products.json"
 
 
 def public_products():
@@ -48,6 +49,9 @@ def get_products():
     products_data["products"] = products_array
     products_data["num_products"] = len(products_array)
     
+    register_dir = os.path.join(script_dir, 'register')
+    if not os.path.exists(register_dir): os.makedirs(register_dir)
+        
     with open(products_dir, "w") as product_file:
         json.dump(products_data, product_file)
 
