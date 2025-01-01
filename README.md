@@ -24,8 +24,8 @@ https://github.com/TokamLilian/Crypto-currencies-ETL-pipeline.git
 
 
 2. **Install necessary libraries:**
-Make sure to install the required Python libraries:
-`pip install json`, `pip install ccxt` and `pip install http`
+RUN THE SCRIPT `requirements.py`. This will install all the necessary libraries for the project and change the project andpackage parameters to reflect on the actual working directory.
+Make sure the script runs well without errors.
 
 
 3. **Set up the database:**
@@ -47,7 +47,11 @@ Prepare the SQL Server Environment
     - Check the database `Financial_data_etl` is created and steps have no errors.
     - Verify that the SQL Server Agent is running and configured to execute the SSIS packages.
 
-4. **Power BI Report:**
+4. **Run the ETL Pipeline:**
+   - Execute the SQL Server Agent job to run the SSIS packages. This will trigger the ETL pipeline, extracting, transforming, and loading the data into the destination database.
+   - Verify that the data is loaded correctly into the destination database (Financial_Data).
+
+5. **Power BI Report:**
 The Power BI file (`Coinbase trading.pbit`) can be opened using Power BI Desktop. Make sure the data source paths are correctly configured in the report file.
 
 
