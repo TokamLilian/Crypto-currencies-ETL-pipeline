@@ -24,14 +24,16 @@ https://github.com/TokamLilian/Crypto-currencies-ETL-pipeline.git
 
 
 2. **Install necessary libraries:**
+
 RUN THE SCRIPT `requirements.py`. This will install all the necessary libraries for the project and change the project andpackage parameters to reflect on the actual working directory.
+
 Make sure the script runs well without errors.
 
 
 3. **Set up the database:**
 Ensure your SQL Server or other database systems are correctly set up and connected.
 
-Prepare the SQL Server Environment  
+## Prepare the SQL Server Environment  
 
 1. **Validate Access**: Ensure Integration Catalog exists you have read access to the `SSISDB` and `msdb` databases.  
    - You must have access to execute queries on both of these system databases.  
