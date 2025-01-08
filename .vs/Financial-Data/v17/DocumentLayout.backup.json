@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Procedures\\load_pbi_currencies.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Procedures\\load_pbi_currencies.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{39965FB8-68D0-4737-8FAC-7B21635149FB}|SSIS\\SSIS.dtproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\3_Load_data.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{39965FB8-68D0-4737-8FAC-7B21635149FB}|SSIS\\SSIS.dtproj|solutionrelative:SSIS\\3_Load_data.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Procedures\\load_pbi_currencies.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{5AD8827C-F848-497D-94FD-55CA156CE973}|SQL\\SQL.sqlproj|solutionrelative:SQL\\Procedures\\load_pbi_currencies.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,19 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "load_pbi_currencies.sql ",
-              "DocumentMoniker": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Procedures\\load_pbi_currencies.sql",
-              "RelativeDocumentMoniker": "SQL\\Procedures\\load_pbi_currencies.sql",
-              "ToolTip": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SQL\\Procedures\\load_pbi_currencies.sql\r\n(HEMLE-XPS\\tokam)",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-31T23:39:51.782Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -52,12 +33,8 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{007a3a6b-b5b2-454d-a2bd-cf929f989be2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "3_Load_data.dtsx [Design]",
               "DocumentMoniker": "C:\\Users\\tokam\\Downloads\\Documents\\Crypto-currencies-ETL-pipeline\\SSIS\\3_Load_data.dtsx",
               "RelativeDocumentMoniker": "SSIS\\3_Load_data.dtsx",
