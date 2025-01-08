@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="3_Load_data"
   DTS:PackageType="5"
-  DTS:VersionBuild="89"
-  DTS:VersionGUID="{4441A313-D251-4900-BCB4-46408A2033D4}">
+  DTS:VersionBuild="92"
+  DTS:VersionGUID="{05FA7C2F-1500-4EE6-A2CC-583EC241DDB2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -60,12 +60,12 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="load data staging historical transactions in to power bi table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{258F8837-C3C9-4F6B-BFB1-497C1C2581E4}"
-          SQLTask:SqlStatementSource="INSERT INTO powerbi.pbi_Historical_transactions&#xA;             (transaction_id, transaction_date, symbol, amount, exchange, price, side, sell_side_amount, fee, load_date)&#xA;SELECT DISTINCT transaction_id, transaction_date, symbol, amount, exchange, price, side, sell_side_amount, fee, SYSDATETIME() AS Expr1&#xA;FROM   stg.stg_Historical_transactions t1&#xA;WHERE (NOT EXISTS&#xA;                 (SELECT 1 AS Expr1&#xA;                 FROM    powerbi.pbi_Historical_transactions t2&#xA;                 WHERE (t1.transaction_id = t1.transaction_id)))" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="INSERT INTO powerbi.pbi_Historical_transactions&#xA;             (transaction_id, transaction_date, symbol, amount, exchange, price, side, sell_side_amount, fee, load_date)&#xA;SELECT DISTINCT transaction_id, transaction_date, symbol, amount, exchange, price, side, sell_side_amount, fee, SYSDATETIME() AS  load_date&#xA;FROM stg.stg_Historical_transactions t1&#xA;WHERE NOT EXISTS&#xA;                 (SELECT 1&#xA;                 FROM powerbi.pbi_Historical_transactions t2&#xA;                 WHERE (t1.transaction_id = t2.transaction_id))" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -87,7 +87,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Load data from products file into power bi table"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -111,7 +111,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Rename products file"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
@@ -185,7 +185,7 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="318,204"
+          PanelSize="318,205"
           Size="318,248"
           Id="Package\Load Products"
           TopLeft="432.5,5.49999999999989" />
